@@ -20,6 +20,7 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 Technologies involved:
 Next.JS
 Shadcn UI 
+Clerkjs - For Auth
 
 In Organizing Folders we have this Organizational Routes that ignores parent Path and goes directly to the sub Path in routes. This is denoted by `()` you can also add layouts on this which will affect styles in the folder  
 
@@ -31,3 +32,10 @@ Powershell command for deleting a file  `Remove-Item -Recurse -Force {Path}`
 
 
 we can move our main page to organizational folders/ or route folders  `({name})`
+
+
+
+# Note: 
+When handling api keys add to gitignore local .env file  
+
+- Which u will have to create
