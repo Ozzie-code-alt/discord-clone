@@ -24,3 +24,10 @@ Shadcn UI
 In Organizing Folders we have this Organizational Routes that ignores parent Path and goes directly to the sub Path in routes. This is denoted by `()` you can also add layouts on this which will affect styles in the folder  
 
 when handling routes only change folder name not page name. page name should be in default page.tsx otherwise 404 not found
+
+
+Powershell command for deleting a file  `Remove-Item -Recurse -Force {Path}`
+
+
+
+we can move our main page to organizational folders/ or route folders  `({name})`
