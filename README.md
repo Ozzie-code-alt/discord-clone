@@ -22,6 +22,9 @@ Next.JS
 Shadcn UI 
 Clerkjs - For Auth
 next-themes
+# Backend
+- Prisma
+- PlanetScale
 
 In Organizing Folders we have this Organizational Routes that ignores parent Path and goes directly to the sub Path in routes. This is denoted by `()` you can also add layouts on this which will affect styles in the folder  
 
@@ -46,3 +49,17 @@ When handling api keys add to gitignore local .env file
 - clerk is the middleware that was used in this project. Mainly because of it simplicity. 
 docs can be seen here for next.js 
 https://clerk.com/docs/quickstarts/nextjs
+
+
+
+# Prisma 
+Installation `npm i -D primsa`
+then run `npx prisma init`
+
+- Note Everytime we have to modify our schema we have to run in terminal 
+`npx prisma generate` --  this adds the schema to our node modules soo we can develop with it 
+after this you have to push it  
+`nps prisma db push`
+
+after all that now we have to create a DB util in prisma  we will do it in our lib folder
+`npm install @prisma/client` ps: you can install this in root 
