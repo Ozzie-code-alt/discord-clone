@@ -26,6 +26,8 @@ next-themes
 - Prisma
 - PlanetScale
 
+Upload thing
+
 In Organizing Folders we have this Organizational Routes that ignores parent Path and goes directly to the sub Path in routes. This is denoted by `()` you can also add layouts on this which will affect styles in the folder  
 
 when handling routes only change folder name not page name. page name should be in default page.tsx otherwise 404 not found
@@ -63,3 +65,5 @@ after this you have to push it
 
 after all that now we have to create a DB util in prisma  we will do it in our lib folder
 `npm install @prisma/client` ps: you can install this in root 
+
+
