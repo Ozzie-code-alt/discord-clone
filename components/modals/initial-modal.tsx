@@ -10,6 +10,7 @@ import { useEffect, useState } from "react"
 import { FileUpload } from "../file-upload"
 import {useRouter} from "next/navigation"
 import axios from "axios"
+
 const formSchema = z.object({
     name: z.string().min(1,{
         message:"Server name is required."
