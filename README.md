@@ -22,6 +22,7 @@ Next.JS
 Shadcn UI 
 Clerkjs - For Auth
 next-themes
+zustand
 # Backend
 - Prisma
 - PlanetScale
