@@ -25,8 +25,9 @@ next-themes
 # Backend
 - Prisma
 - PlanetScale
+- axios 
+- Upload Thing
 
-Upload thing
 
 In Organizing Folders we have this Organizational Routes that ignores parent Path and goes directly to the sub Path in routes. This is denoted by `()` you can also add layouts on this which will affect styles in the folder  
 
