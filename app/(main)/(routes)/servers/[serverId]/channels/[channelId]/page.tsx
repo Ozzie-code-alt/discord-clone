@@ -1,7 +1,5 @@
 import { redirectToSignIn } from "@clerk/nextjs";
 import { redirect } from "next/navigation";
-
-
 import { ChannelType } from "@prisma/client";
 
 import { currentProfile } from "@/lib/current-profile";
