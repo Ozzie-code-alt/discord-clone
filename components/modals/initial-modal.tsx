@@ -22,9 +22,9 @@ const formSchema = z.object({
 export const InitialModal = ()=>{
     const [isMounted, setIsMounted] = useState(false) // basically this is a hydration fix
     const router = useRouter()
-    useEffect(()=>{
-        setIsMounted(true)
-    })
+    useEffect(() => {
+        setIsMounted(true);
+      }, []);
     const form = useForm({
         resolver: zodResolver(formSchema),
         defaultValues:{
