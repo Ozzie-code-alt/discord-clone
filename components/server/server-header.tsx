@@ -51,7 +51,7 @@ server, role
                     </DropdownMenuItem>
                 )}
                       {isModerator && (
-                    <DropdownMenuItem className="px-3 py-2 text-sm cursor-pointer">
+                    <DropdownMenuItem className="px-3 py-2 text-sm cursor-pointer" onClick={()=> onOpen("createChannel")}>
                        Create Channel
                         <PlusCircle className="h-4 w-4 ml-auto"/>
                     </DropdownMenuItem>
@@ -61,14 +61,14 @@ server, role
                 )}
 
                   {isAdmin && (
-                    <DropdownMenuItem className="px-3 py-2 text-sm cursor-pointer text-rose-500">
+                    <DropdownMenuItem className="px-3 py-2 text-sm cursor-pointer text-rose-500" onClick={()=>onOpen('deleteServer', {server})}>
                        Delete Server
                         <Trash className="h-4 w-4 ml-auto"/>
                     </DropdownMenuItem>
                 )}
 
                  {!isAdmin && (
-                    <DropdownMenuItem className="px-3 py-2 text-sm cursor-pointer text-rose-500">
+                    <DropdownMenuItem className="px-3 py-2 text-sm cursor-pointer text-rose-500" onClick={()=> onOpen("leaveServer",{server})}>
                        Leave Server
                         <LogOut className="h-4 w-4 ml-auto"/>
                     </DropdownMenuItem>
