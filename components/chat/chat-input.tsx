@@ -17,6 +17,7 @@ import {
 import { Input } from "@/components/ui/input";
 import { useModal } from "@/hooks/use-modal-store";
 import { EmojiPicker } from "@/components/emoji-picker";
+import { GifGenerator } from "../gif-generator";
 
 interface ChatInputProps {
   apiUrl: string;
@@ -90,6 +91,7 @@ export const ChatInput = ({
                     <EmojiPicker
                       onChange={(emoji: string) => field.onChange(`${field.value} ${emoji}`)}
                     />
+                    <GifGenerator />
                   </div>
                 </div>
               </FormControl>
