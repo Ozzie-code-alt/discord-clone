@@ -91,7 +91,7 @@ export const ChatInput = ({
                     <EmojiPicker
                       onChange={(emoji: string) => field.onChange(`${field.value} ${emoji}`)}
                     />
-                    <GifGenerator />
+                    <GifGenerator onChange={(gif: string) => field.onChange(/*<img src={gif}></img>*/ `${gif}`)} />
                   </div>
                 </div>
               </FormControl>

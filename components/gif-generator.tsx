@@ -11,11 +11,14 @@ import {
   PopoverTrigger,
 } from "@/components/ui/popover";
 
+interface GifGeneratorProps{
+  onChange: (value:string) => void
+}
 
-
-export const GifGenerator = () => {
+export const GifGenerator = ({onChange}:GifGeneratorProps) => {
   
-
+// const {TENOR_API_KEY} = process.env
+// console.log(TENOR_API_KEY)
   return (
     <Popover>
       <PopoverTrigger>
@@ -30,8 +33,9 @@ export const GifGenerator = () => {
         className="bg-transparent border-none shadow-none drop-shadow-none mb-16"
       >
         <GifPicker
-        tenorApiKey="AIzaSyB-vMPgyD50AvBMGObqaeOe_VPkJETKxIg" onGifClick={(gifValue)=>{
-          console.log(gifValue)
+        tenorApiKey= "AIzaSyB-vMPgyD50AvBMGObqaeOe_VPkJETKxIg" onGifClick={(currImage)=>{
+
+           onChange(currImage.preview.url)
         }}
         />
       </PopoverContent>
